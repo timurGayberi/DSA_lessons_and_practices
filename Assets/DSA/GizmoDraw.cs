@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -29,10 +30,12 @@ namespace DSA
         private void VisualizeArray(Vector3 offset, int arrayIndex)
         {
             var position = transform.position + offset;
-            
-            Draw1DArray(position, arrayIndex);
+
+            //Draw1DArray(position, arrayIndex);
             //Draw2DArray()
             //Draw3DArray()
+            
+            //DrawTuple();
         }
         #endregion
 
@@ -67,7 +70,15 @@ namespace DSA
                 Gizmos.DrawWireCube(position, filledSize);
             }
             #endregion
-            
+
+        #region TuplePractice
+        
+        public void DrawTuple()
+        {
+            //Draw a tuple example;
+        }
+        
+        #endregion
     }
 }
 #endregion
